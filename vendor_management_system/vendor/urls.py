@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import Vendor,OnVEndor
+from .views import VendorView,OnVEndor
 
 urlpatterns = [
-    path('',Vendor.as_view()),
+    path('',VendorView.as_view()),
     path('<int:vendor_id>',OnVEndor.as_view())
 ]

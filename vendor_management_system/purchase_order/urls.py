@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import Order,OnOrderr
+from .views import POView,OnPOView
 
 urlpatterns = [
-    path('',Order.as_view()),
-    path('<int:po_id>',OnOrderr.as_view())
+    path('',POView.as_view()),
+    path('<int:po_id>',OnPOView.as_view())
 ]
